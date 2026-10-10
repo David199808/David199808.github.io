@@ -1,162 +1,238 @@
+/* INICIO */
 body {
     margin: 0;
+    background: #12100d;
+}
+
+/*LOGO PRINCIPAL */
+
+.logo {
     width: 100%;
-    box-sizing: border-box;
-    background: #0b0a09 ;
+    margin-top: 20px;
+    padding: 0px 0px 30px;
+    position: relative;
+    background-color: #12100d;
+    display: flex;
+    justify-content: center;
 }
 
-.barra1 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
 
-.logo1 {
+.logo__imagen {
     width: 450px;
     padding: 0;
 }
 
-.barra-principal {
+
+/* MENU DE NAVEGACION */
+
+
+.menu {
     font-family: sans-serif;
-    margin: auto;
-    text-align: center;
-    width: 800px;
-    padding: 15px 0 15px 0;
-    border-top: solid #2a251c;
-    border-bottom: solid #2a251c;
-    
-}
-
-.carta {
-    font-weight: bolder;
-    text-decoration: none;
-    margin-right: 100px;
-    color: #f4ecdd;
-    font-size: 20px;
-    
-}
-
-.nosotros {
-    font-weight: bolder;
-    text-decoration: none;
-    color: #f4ecdd;
-    font-size: 20px;
-}
-
-.ubicacion {
-    font-weight: bolder;
-    text-decoration: none;
-    margin-left: 100px;
-    color: #f4ecdd;
-    font-size: 20px;
-}
-
-.reserva {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bolder;
-    border-radius: 15px;
-    color: #12100d;
-    background-color: #e0ae2c;
-    margin-left: 100px;
-    font-size: 13px;
-}
-
-
-.textprin {
-    margin: 0px 0px 70px 500px;
-}
-
-.parrilla {
-    font-style: italic;
-    width: 20vw;
-    padding: 0;
-    font-weight:bolder;
-    font-size: 13px;
-    font-family: sans-serif;
-    color: #e0ae2c;
-}
-
-h2 {
-    font-style: italic;
-    max-width: 400px;
-    width: 80vw;
-    margin-bottom: 30px;
-    font-size: 15px;
-    font-weight: 100;
-    color: #f4ecdd;
-    font-family: sans-serif;
-    text-align:left
-}
-
-.textoh1 {
-    width: 80vw;
-    max-width: 600px;
-    text-align: left;
-    font-size: 50px;
-    margin-top: 20px;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    max-width: 450px;
-    color: #f4ecdd;
-}
-
-.reserva2 {
-    font-weight: bolder;
-    font-family: sans-serif;
-    text-decoration: none;
-    box-shadow: 0 0 10px #2a251c;
-    padding: 15px 30px;
-    margin-right: 20px;
-    border: solid 1px #e0ae2c;
-    border-radius: 15px;
-    color: #12100d;
-    background-color: #e0ae2c;
-    font-size: 13px;
-}
-
-.carta2 {
-    font-weight: bolder;
-    font-family: sans-serif;
-    text-decoration: none;
-    box-shadow: 0 0 10px #2a251c;
-    padding: 15px 30px;
-    border: solid 1px #e0ae2c;
-    border-radius: 15px;
-    color: #e0ae2c;
-    background-color: #0b0a09;
-    font-size: 13px;
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items:start;
-    gap: 200px;
-    margin: 0;
-    padding: 120px 20px 0px 20px;
-}
-
-.hero-imagen {
-    display: flex-end;
+    position: sticky;
+    top:0;
+    display: flex;
     justify-content: center;
 }
 
-.hero-imagen img {
-    filter: drop-shadow(0 0 20px #e0ae2c);
-    width: 100%;
-    max-width: 400px;
+.menu__navegacion {
+    max-width: 100%;
+    padding: 20px 0 20px 0;
+    background: #12100df9;
+    border-bottom: 1px solid #2a251c;
+    
 }
 
-.caja1 {
+
+.menu__link {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 47px;
+    padding: 10px 20px;
+    background-color: #12100d;
+    color: #f4ecdd;
+    border: 1px solid #2a251c;
+    border-radius: 20px;
+    display: inline;    
+}
+
+.menu__link--reserva {
+    background-color: #12100d;
+}
+.menu__link:hover {
+    color: #FFF6E8;
+    border: 1px solid #FFF6E8;
+    
+}
+
+.menu__link--activo {
+    border: 1px solid #F28C28;
+    color: #12100d;
+    background-color: #F28C28;
+}
+
+.menu__link--activo:hover {
+    border: 1px solid #F28C28;
+    color: #12100d;
+}
+
+
+/* CARTA DE PRESENTACION */
+.card {
+    margin: 100px 500px 0px 500px;
+}
+
+
+.card__bienvenida {
+    margin-top: 150px;
+    position: relative;
+}
+
+
+.card__notas {
+    margin: 0;
+    font-weight:bolder;
+    font-size: 18px;
+    color: #F5B54A;
+}
+
+
+.card__titulo {
+    white-space: pre-wrap;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #f4ecdd;
+}
+
+
+.card__descripcion {
+    margin-top: 20px;
+    width: 550px;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    color: #f4ecdd;
+    
+}
+
+
+.card__imagen {
+    filter: drop-shadow(0 0 20px #F5B54A);
+    width: 350px;
+    border-radius: 200px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
+
+.card__link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
-    box-sizing: border-box;
-    border-top: solid 5px #2a251c;
-    border-bottom: solid #2a251c;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 70px;
+}
+
+.card__link--reserva {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-right: 20px;
+    border: 1px solid #f4ecdd;
+    border-radius: 20px;
+    background-color: #12100d;
+    color: #f4ecdd;
+    
+}
+
+.card__link--carta {
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 1px solid #f4ecdd;
+    border-radius: 20px;
+    background-color: #12100d;
+    color: #f4ecdd;
+}
+
+
+.card__link--reserva:hover {
+    border: 0;
+    color: #12100d;
+    background-color: #F28C28;
+}
+
+.card__link--carta:hover {
+    border: 0;
+    color: #12100d;
+    background-color: #F28C28;
+}
+
+
+/* PIE DE PAGINA */
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f4ecde;
+    text-align: center;
+
+}
+
+
+
+
+/* CARTA DE PRODUCTOS */
+
+.productos {
+    text-align: center;
+    margin: 100px 400px 100px 400px;
+}
+
+.productos__item {
+    padding: 50px;
+    display: inline-block;
+}
+
+.productos__imagen {
+    width: 300px;
+}
+
+.contenido {
+    color: #f4ecdd;
+    font-size: 20px;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.nosotros {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nosotros__informacion {
+    border: 15px solid #2a251c;
+    box-shadow: 0 20px 20px #000;
+    padding: 30px;
+    border-style: double;
+    width: 800px;
     margin-top: 100px;
-    padding: 87px;
-    background-color: #1a1712;
+    
 }
 
+.nosotros__titulo {
+    color: #e0ae2c;
 
+}
 
+.nosotros__descripcion {
+    color: #f4ecdd;
+    white-space: pre-wrap;
+}
+
+.nosotros__descripcion--centrado {
+    text-align: center;
+}
